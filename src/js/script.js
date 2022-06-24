@@ -161,6 +161,9 @@ export class Keyboard {
       case 'Backspace':
         this.textarea.value = this.textarea.value.toString().slice(0, -1);
         break;
+      case 'Space':
+        this.textarea.value += ' ';
+        break;
       default:
     }
   }
