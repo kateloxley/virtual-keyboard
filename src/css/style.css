@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
     background: #2e2e2e;
     border: 20px solid rgba(0, 0, 0, .1);
+    outline: none;
     height: 300px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -28,7 +29,7 @@ body {
 .keyboard {
     max-width: 1008px;
     width: 100%;
-    background-color: #d4d3d3;
+    background-color: #2e2e2e;
     overflow: hidden;
     position: relative;
     overflow: hidden;
@@ -58,7 +59,8 @@ body {
 .keyboard__key {
     width: 57px;
     height: 57px;
-    background-color: rgb(243, 242, 242);
+    background-color: #393434;
+    color: #f3f2e7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,12 +72,14 @@ body {
 
 .keyboard__key.active {
     background-color: rgb(70, 68, 68);
-    color: #fff;
 }
 
 .keyboard__key:hover {
-    background-color: #b4b4b4;
-    color: #fff;
+    background-color: rgb(82, 82, 82);
+}
+
+.keyboard__key:active {
+    background-color: rgb(70, 68, 68);
 }
 
 .backspace {
@@ -85,10 +89,6 @@ body {
 .enter {
     width: 135px;
 }
-
-/* .backslash {
-    width: 75px;
-} */
 
 .keyboard__key.shift:nth-child(1) {
     width: 115px;
@@ -106,19 +106,20 @@ body {
     width: 107px;
 }
 
+.caps_active {
+    background-color: rgb(70, 68, 68);
+}
+
 .win {
     font-style: italic;
 }
-
-/* .tab {
-    width: 100px;
-} */
 
 .header {
     font-size: 35px;
     font-weight: 600;
     text-align: center;
     margin: 15px 0 15px 0;
+    text-transform: uppercase;
 }
 
 .footer {
@@ -130,4 +131,5 @@ body {
     text-align: center;
     margin-top: 15px;
     line-height: 25px;
+    text-transform: uppercase;
 }
